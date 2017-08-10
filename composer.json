@@ -1,6 +1,6 @@
 {
     "name": "toonday/numbergenerator",
-    "description": "Random number generator.",
+    "description": "Pin number generator.",
     "type": "library",
     "require": {
         "php": ">=7.0.0"
