@@ -1,0 +1,21 @@
+{
+    "name": "toonday/numbergenerator",
+    "description": "Random number generator.",
+    "type": "library",
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "'Tunde",
+            "email": "tunde1990@gmail.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4" : {
+            "NumberGenerator\\" : "src/NumberGenerator"
+        }
+    },
+    "minimum-stability": "stable"
+}
