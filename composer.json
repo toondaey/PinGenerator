@@ -1,5 +1,5 @@
 {
-    "name": "toonday/numbergenerator",
+    "name": "toonday/pingenerator",
     "description": "Pin number generator.",
     "type": "library",
     "require": {
