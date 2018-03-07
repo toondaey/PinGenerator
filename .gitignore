@@ -1,4 +1,14 @@
-.env
-composer.lock
-index.php
-/vendor
+vendor/*
+
+# Required folders are not ignored.
+!src
+!tests
+
+# Required files are not ignored (include metafiles).
+!*.xml
+!*.json
+!*.lock
+!.editorconfig
+
+
+
