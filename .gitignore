@@ -11,3 +11,4 @@
 # Files not pushed to the remote repository.
 vendor/*
 tests/.DS_Store
+.DS_Store
