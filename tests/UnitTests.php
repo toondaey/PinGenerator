@@ -60,16 +60,4 @@ final class UnitTests extends TestCase {
 
         $this->assertEquals(1, $generator->getChars());
     }
-
-    /**
-     * Test if method returns the current instance of object.
-     * 
-     * @test
-     * @depends initRange
-     * @return void
-     */
-    function returnCurrentInstanceOfClass(NumberGenerator $generator) {
-
-        $this->assertTrue($generator instanceof NumberGenerator);
-    }
 }
