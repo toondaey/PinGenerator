@@ -9,6 +9,3 @@ vendor/*
 !*.json
 !*.lock
 !.editorconfig
-
-
-

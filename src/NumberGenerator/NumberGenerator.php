@@ -31,26 +31,15 @@ class NumberGenerator
     }
 
     /**
-     * Set repeating characters if characters can be repeated.
+     * Set repeating characters to false if characters should not be repeated.
      *
      * @param boolean $repeating
      */
-    function repeat(bool $repeating = true)
+    function noRepeat()
     {
-        static::$repeating = $repeating;
-    }
+        static::$repeating = false;
 
-    /**
-     * If you want zero to be included.
-     * Setting this to 'false' will make the number of characters that can be
-     * generated less than 10.
-     *
-     * @param boolean $includeZero [description]
-     */
-    protected static function includeZero(bool $includeZero = true)
-    {
-        if (! $includeZero)
-            static::remove(0);
+        return $this;
     }
 
     /**
@@ -60,8 +49,7 @@ class NumberGenerator
      */
     function noZero()
     {
-        static::includeZero(false);
-
+        static::remove(0);
         return $this;
     }
 
@@ -91,9 +79,9 @@ class NumberGenerator
      * 
      * @return void
      */
-    protected static function setRange()
+    protected static function setRange(array $range = [])
     {
-        static::$range = range(0, 9);
+        static::$range = ! empty($range) ? $range : range(0, 9);
     }
 
     /**
@@ -139,8 +127,11 @@ class NumberGenerator
      */
     protected static function number ()
     {
-        throw new \Exception(json_encode(static::getRange()));
-        return array_rand(static::getRange());
+        $range = static::getRange();
+
+        $number = $range[mt_rand(0, count($range) - 1)];
+
+        return $number;
     }
 
     /**
@@ -165,11 +156,11 @@ class NumberGenerator
     {
         $range = static::getRange();
 
-        $key = array_search($number, $range);
+        $key = array_search((int)$number, $range, TRUE);
 
         unset($range[$key]);
 
-        static::$range = array_values($range);
+        static::setRange(array_values($range));
     }
 
     /**
