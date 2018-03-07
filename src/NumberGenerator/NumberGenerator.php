@@ -111,8 +111,8 @@ class NumberGenerator
      */
     protected static function setChars(int $chars)
     {
-        if ($chars < 1)
-            static::$chars = 1;
+        if ($chars < 4)
+            static::$chars = 4;
 
         else if ($chars > 10)
             static::$chars = 10;

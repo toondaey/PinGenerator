@@ -1,7 +1,8 @@
 <?php 
 
-namespace Tests;
+namespace Tests\Unit;
 
+use Tests\TestCase;
 use NumberGenerator\NumberGenerator;
 
 final class UnitTests extends TestCase {
@@ -58,6 +59,6 @@ final class UnitTests extends TestCase {
 
         $generator = new NumberGenerator(0);
 
-        $this->assertEquals(1, $generator->getChars());
+        $this->assertEquals(4, $generator->getChars());
     }
 }

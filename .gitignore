@@ -1,5 +1,3 @@
-vendor/*
-
 # Required folders are not ignored.
 !src
 !tests
@@ -9,3 +7,8 @@ vendor/*
 !*.json
 !*.lock
 !.editorconfig
+
+# Files not pushed to the remote repository.
+clover.xml
+vendor/*
+tests/.DS_Store

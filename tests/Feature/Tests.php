@@ -1,7 +1,8 @@
 <?php 
 
-namespace Tests;
+namespace Tests\Feature;
 
+use Tests\TestCase;
 use NumberGenerator\NumberGenerator;
 
 class FeatureTests extends TestCase {
@@ -52,7 +53,7 @@ class FeatureTests extends TestCase {
 
         $generator = $generator->noRepeat();
 
-        $actual = "1234513";//$generator->generate();
+        $actual = "1234513";
 
         $this->assertRegExp("/\A(\d)(?!\g{1})/", $actual);
     }
