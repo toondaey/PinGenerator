@@ -9,6 +9,5 @@
 !.editorconfig
 
 # Files not pushed to the remote repository.
-clover.xml
 vendor/*
 tests/.DS_Store

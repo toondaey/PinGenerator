@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1520436516">
+  <project timestamp="1520436516">
+    <package name="NumberGenerator">
+      <file name="/Users/toonday/Tunde/Personal/pingenerator/src/NumberGenerator/NumberGenerator.php">
+        <class name="NumberGenerator\NumberGenerator" namespace="NumberGenerator">
+          <metrics complexity="17" methods="12" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="35" coveredstatements="34" elements="47" coveredelements="45"/>
+        </class>
+        <line num="27" type="method" name="__construct" complexity="1" crap="1" count="4"/>
+        <line num="29" type="stmt" count="4"/>
+        <line num="30" type="stmt" count="4"/>
+        <line num="31" type="stmt" count="4"/>
+        <line num="38" type="method" name="noRepeat" complexity="1" crap="1" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="50" type="method" name="noZero" complexity="1" crap="1" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="1"/>
+        <line num="61" type="method" name="generate" complexity="3" crap="3.03" count="2"/>
+        <line num="63" type="stmt" count="2"/>
+        <line num="65" type="stmt" count="2"/>
+        <line num="67" type="stmt" count="1"/>
+        <line num="69" type="stmt" count="1"/>
+        <line num="70" type="stmt" count="1"/>
+        <line num="71" type="stmt" count="0"/>
+        <line num="74" type="stmt" count="2"/>
+        <line num="82" type="method" name="setRange" visibility="protected" complexity="2" crap="2" count="4"/>
+        <line num="84" type="stmt" count="4"/>
+        <line num="85" type="stmt" count="4"/>
+        <line num="92" type="method" name="getRange" complexity="1" crap="1" count="2"/>
+        <line num="94" type="stmt" count="2"/>
+        <line num="102" type="method" name="getChars" complexity="1" crap="1" count="5"/>
+        <line num="104" type="stmt" count="5"/>
+        <line num="112" type="method" name="setChars" visibility="protected" complexity="3" crap="3" count="4"/>
+        <line num="114" type="stmt" count="4"/>
+        <line num="115" type="stmt" count="1"/>
+        <line num="117" type="stmt" count="3"/>
+        <line num="118" type="stmt" count="1"/>
+        <line num="120" type="stmt" count="2"/>
+        <line num="121" type="stmt" count="4"/>
+        <line num="128" type="method" name="number" visibility="protected" complexity="1" crap="1" count="1"/>
+        <line num="130" type="stmt" count="1"/>
+        <line num="132" type="stmt" count="1"/>
+        <line num="134" type="stmt" count="1"/>
+        <line num="142" type="method" name="combined" visibility="protected" complexity="1" crap="1" count="2"/>
+        <line num="144" type="stmt" count="2"/>
+        <line num="145" type="stmt" count="2"/>
+        <line num="155" type="method" name="remove" visibility="protected" complexity="1" crap="1" count="1"/>
+        <line num="157" type="stmt" count="1"/>
+        <line num="159" type="stmt" count="1"/>
+        <line num="161" type="stmt" count="1"/>
+        <line num="163" type="stmt" count="1"/>
+        <line num="164" type="stmt" count="1"/>
+        <line num="171" type="method" name="copy" complexity="1" crap="1" count="3"/>
+        <line num="173" type="stmt" count="3"/>
+        <metrics loc="175" ncloc="108" classes="1" methods="12" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="35" coveredstatements="34" elements="47" coveredelements="45"/>
+      </file>
+    </package>
+    <metrics files="1" loc="175" ncloc="108" classes="1" methods="12" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="35" coveredstatements="34" elements="47" coveredelements="45"/>
+  </project>
+</coverage>

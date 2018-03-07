@@ -2,6 +2,7 @@
     "name": "toonday/pingenerator",
     "description": "Pin number generator.",
     "type": "library",
+    "keywords": [ "library", "PinGenerator." ],
     "require": {
         "php": ">=7.0.0"
     },
