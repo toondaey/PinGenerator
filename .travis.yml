@@ -9,4 +9,4 @@ install: composer install
 script: composer run tests
 
 after_success: 
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -t a3a391f9-6223-4b92-92ec-b3bd7ce0593e
