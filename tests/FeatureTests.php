@@ -39,4 +39,21 @@ class FeatureTests extends TestCase {
 
         $this->assertEquals(6, $actual);
     }
+
+    /**
+     * Test that characters generated will not be repeated when specifically stated.
+     * 
+     * @test
+     * @depends generatorWillNotIncludeZero
+     * @param  \NumberGenerator\NumberGenerator $generator
+     * @return void
+     */
+    function generateNoRepeatingCharacters(NumberGenerator $generator) {
+
+        $generator = $generator->noRepeat();
+
+        $actual = "1234513";//$generator->generate();
+
+        $this->assertRegExp("/\A(\d)(?!\g{1})/", $actual);
+    }
 }
