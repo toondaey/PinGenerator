@@ -7,41 +7,36 @@ use NumberGenerator\NumberGenerator;
 class FeatureTests extends TestCase {
 
     /**
-     * Test if numbers generated with default initializers are 6.
+     * Test that numbers generated will not include a zero when the "noZero" method is called.
      * 
      * @test
-     * @param  \NumberGenerator\NumberGenerator $generator
      * @return void
      */
-    function generateRandomCharacters () {
+    function generatorWillNotIncludeZero() {
 
         $generator = new NumberGenerator;
 
-        $numbers = $generator->copy()->generate();
+        $actual = $generator->copy()->noZero()->generate();
 
-        $actual = strlen($numbers);
-
-        $this->assertEquals(6, $actual);
+        $this->assertRegExp("/\A(?![^0]*+0)/", $actual);
 
         return $generator;
     }
 
     /**
-     * Test that numbers generated will not include a zero when the "noZero" method is called.
+     * Test if numbers generated with default initializers are 6.
      * 
      * @test
-     * @depends generateRandomCharacters
+     * @depends generatorWillNotIncludeZero
      * @param  \NumberGenerator\NumberGenerator $generator
      * @return void
      */
-    function generatorWillNotIncludeZero(NumberGenerator $generator) {
+    function generateRandomCharacters (NumberGenerator $generator) {
 
-        $generator = $generator->copy();
+        $numbers = $generator->generate();
 
-        $generate = $generator->noZero();
-throw new \Exception(json_encode($generator->generate()));
-        $actual = $generator->generate();
+        $actual = strlen($numbers);
 
-        $this->assertRegExp("/\A(?![^0]*+[0])/", $actual, $actual);
+        $this->assertEquals(6, $actual);
     }
 }
