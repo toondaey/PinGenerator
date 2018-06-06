@@ -3,7 +3,7 @@
 namespace Tests\Feature;
 
 use Tests\TestCase;
-use NumberGenerator\NumberGenerator;
+use Toonday\NumberGenerator\NumberGenerator;
 
 class FeatureTests extends TestCase {
 

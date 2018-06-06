@@ -3,7 +3,7 @@
 namespace Tests\Unit;
 
 use Tests\TestCase;
-use NumberGenerator\NumberGenerator;
+use Toonday\NumberGenerator\NumberGenerator;
 
 final class UnitTests extends TestCase {
 

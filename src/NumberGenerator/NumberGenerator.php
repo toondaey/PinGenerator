@@ -1,6 +1,6 @@
 <?php
 
-namespace NumberGenerator;
+namespace Toonday\NumberGenerator;
 
 /**
  * 1-10 digits Pin generator.
